@@ -262,17 +262,12 @@ client.on('message', function(message) {
 
 
 
-client.on('message', message => {
-            if(!message.channel.guild) return;
-let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('*cb')){
- if(!message.author.id === '244888652004458497') return;
-message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
-client.users.forEach(m =>{
-m.sendMessage(args)
-})
-}
-});
+
+
+
+
+
+
 
 
 
