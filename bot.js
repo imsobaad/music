@@ -255,24 +255,8 @@ function play(guild, song) {
 
 
 
-function forEachObject(obj, func) {
-    Object.keys(obj).forEach(function (key) { func(key, obj[key]) });
-}
-client.on("ready", () => {
-    var guild;
-    while (!guild)
-        guild = client.guilds.get("509810371385884684");
-    guild.fetchInvites().then((data) => {
-        data.forEach((Invite, key, map) => {
-            var Inv = Invite.code;
-            dat[Inv] = Invite.uses;
-        });
-    });
-});
 
 
-
-var dat = JSON.parse("{}");
 function forEachObject(obj, func) {
     Object.keys(obj).forEach(function (key) { func(key, obj[key]) });
 }
@@ -316,7 +300,6 @@ Invited By ${Invite.inviter}`) ;
        });
     });
 });
-
 
 
 
