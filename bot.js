@@ -7,7 +7,6 @@ const convert = require("hh-mm-ss")
 const fetchVideoInfo = require("youtube-info");
 const bot = require('./package.json');
 const simpleytapi = require('simple-youtube-api')
-const youtube = new simpleytapi(yt_api_key);
 const prefix = "*";
 client.login(process.env.SECERT_KEY);
 var guilds = {};
