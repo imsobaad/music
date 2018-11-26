@@ -21,10 +21,6 @@ client.on('message', async function(message) {
     if(!message.channel.guild) return;
     //////////////////////////////////
     if(message.content === `<@${client.user.id}>`) return message.channel.send(`Hey I'am **${client.user.username}**. A nice music bot developed by <@${client.users.get(devs[0]).id}>\nGet In touch with me \`\`m-contact\`\``);
-    const novc = "**<:megX:476797393283710991> You are not in a voice channel.**"
-    const yt = "<:megYT:476798168684691457>"
-    const correct = client.guilds.get('466344656456908811').emojis.get("476545535348834324")
-    const nope = client.guilds.get('466344656456908811').emojis.get('476545382617186337')
     let args = message.content.split(' ').slice(1).join(" ");
 
     if (message.content.startsWith(`${prefix}eval`)) {
