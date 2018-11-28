@@ -131,7 +131,7 @@ client.on('message', async function(message) {
     )
       }
     
-} else if (message.content.toLowerCase().startsWith(`${prefix}lyric`)) {
+ else if (message.content.toLowerCase().startsWith(`${prefix}lyric`)) {
 const lyricistapi = require('lyricist');
 const lyric = new lyricistapi("3u50HX1N0KeDBMCN_y3W126tTcJizSOz-yJtJE7TOmQepOGkAPuzQhuZiRLG9BDn");
 try {
