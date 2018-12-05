@@ -20,7 +20,7 @@ client.on('message', async function(message) {
     if(message.author.bot) return;
     if(!message.channel.guild) return;
     //////////////////////////////////
-    if(message.content === `<@${client.user.id}>`) return message.channel.send(`Hey I'am **${client.user.username}**. A nice music bot developed by <@${client.users.get(devs[0]).id}>\nGet In touch with me \`\`m-contact\`\``);
+    if(message.content === `<@${client.user.id}>`) return message.channel.send(`Hey I'am **${client.user.username}**. A nice bot developed by <@${client.users.get(devs[0]).id}>\nGet In touch with me \`\`*contact\`\``);
     const novc = "**:x: You are not in a voice channel.**"
     const yt = "✅"
     const correct = "✅"
